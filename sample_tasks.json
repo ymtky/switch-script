@@ -1,0 +1,12 @@
+{
+  "sample": {
+    "apps": [
+      {
+        "name": "Google Chrome",
+        "params": [
+          "https://google.com"
+        ]
+      }
+    ]
+  }
+}
