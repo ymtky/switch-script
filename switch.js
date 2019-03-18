@@ -27,7 +27,11 @@
 
     for (app of task.apps) {
         try {
-            execSync(`open -a '${app.name}' ${app.params.join(' ')}`)
+            if (app.params) {
+                execSync(`open -a '${app.name}' ${app.params.join(' ')}`)
+            } else {
+                execSync(`open -a '${app.name}'`)
+            }
         } catch {
             console.log(`failed to open ${app.name}`)
         }
